@@ -31,7 +31,7 @@ export function Collapsible({
 				<ThemedText type="defaultSemiBold">{title}</ThemedText>
 			</XStack>
 			{isOpen && (
-				<YStack mt="$1.5" ml="$6">
+				<YStack marginTop="$1.5" marginLeft="$6">
 					{children}
 				</YStack>
 			)}
