@@ -1,50 +1,76 @@
-# Welcome to your Expo app 👋
+# yumegury
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<!-- プロジェクトのスクリーンショットやロゴなど -->
+<p align="center">
+  <img src="assets/images/icon.png" width="128" alt="project-logo">
+</p>
 
-## Get started
+<p align="center">
+  <b>湯けむりを巡る旅へ。あなただけの温泉・スパ記録帳。</b>
+</p>
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 概要
 
-2. Start the app
+`yumegury` は、訪れた温泉やスパの体験を記録し、共有するためのクロスプラットフォーム・モバイルアプリケーションです。ExpoとReact Nativeをベースに構築されており、iOS, Android, そしてWebで動作します。
 
-   ```bash
-   npx expo start
-   ```
+## ✨ 主な機能
 
-In the output, you'll find options to open the app in a
+- **温泉・スパの記録**: 泉質、温度、感想などを写真と共に記録できます。
+- **クロスプラットフォーム**: 一つのコードベースでiOS、Android、Webに対応します。
+- **テーマ対応**: ライトモードとダークモードをサポートし、目に優しい体験を提供します。
+- **UIコンポーネント**: [Tamagui](https.tamagui.dev/) を利用した、パフォーマンスが高く美しいUI。
+- **ファイルベースルーティング**: [Expo Router](https://docs.expo.dev/router/introduction/) による直感的な画面遷移管理。
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠 技術スタック
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **フレームワーク**: [React Native](https://reactnative.dev/), [Expo](https://expo.dev/)
+- **UIキット**: [Tamagui](https://tamagui.dev/)
+- **言語**: [TypeScript](https://www.typescriptlang.org/)
+- **ルーティング**: [Expo Router](https://docs.expo.dev/router/introduction/)
+- **パッケージ管理**: [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 
-## Get a fresh project
+## 🚀 利用方法
 
-When you're ready, run:
+### 1. 依存関係のインストール
 
 ```bash
-npm run reset-project
+npm install
+```
+または
+```bash
+yarn install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. 開発サーバーの起動
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+ターミナルに表示されるQRコードをExpo Goアプリでスキャンするか、シミュレータを選択してアプリを起動します。
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📁 ディレクトリ構成
 
-## Join the community
+```
+.
+├── app/              # アプリケーションの画面とルーティング
+│   ├── (tabs)/       # タブナビゲーションの各画面
+│   └── _layout.tsx   # ルートレイアウト
+├── assets/           # フォントや画像などの静的リソース
+├── components/       # 再利用可能なUIコンポーネント
+├── constants/        # 色やスタイルなどの定数
+├── hooks/            # カスタムフック
+└── ...
+```
 
-Join our community of developers creating universal apps.
+## 🙌 貢献
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+このプロジェクトへの貢献を歓迎します！バグ報告や機能提案は、GitHubのIssuesにお願いします。プルリクエストも歓迎です。
+
+貢献方法の詳細は、`CONTRIBUTING.md`（未作成）を参照してください。
+
+## 📄 ライセンス
+
+このプロジェクトは [MIT License](LICENSE) のもとで公開されています。
